@@ -17,6 +17,16 @@ A1Z collection → LeRobot v2.1 → official openpi π0.5 JAX LoRA / full fine-t
 
 Use `single` for one arm with head/wrist cameras, or `dual` for two arms with head/left-wrist/right-wrist cameras. Run commands in Linux Bash at the repository root. In each new terminal, enter the repository and activate the appropriate environment. Supply your own devices, task text and dataset paths.
 
+## Table of Contents
+
+- [1. System and clone](#1-system-and-clone)
+- [2. Install environments](#2-install-environments)
+- [3. Preview, collect and inspect](#3-preview-collect-and-inspect)
+- [4. Convert to LeRobot v2.1](#4-convert-to-lerobot-v21)
+- [5. Normalization and training](#5-normalization-and-training)
+- [6. Live loss dashboard](#6-live-loss-dashboard)
+- [7. Serve a checkpoint and run inference](#7-serve-a-checkpoint-and-run-inference)
+
 ## 1. System and clone
 
 Use Ubuntu 22.04 x86_64. Ubuntu 22.04.5 LTS with Linux 6.8 HWE is recommended for the device host, with SocketCAN and V4L2 support. Validate drivers and simultaneous camera capture on other kernels. openpi uses a separate Python 3.11 / uv environment; collection and conversion use separate Conda environments.
